@@ -213,6 +213,7 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductDbContext.cs" />
     <Compile Include="Models\ProductDbInitializer.cs" />
+    <Compile Include="Models\ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +224,9 @@
     </Content>
     <Content Include="scripts\jquery-2.1.0.min.map" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Prep\Index.cshtml" />
+    <Content Include="Views\Prep\Orders.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -232,7 +236,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Prep\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

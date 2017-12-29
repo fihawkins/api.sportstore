@@ -46,7 +46,7 @@ namespace SportsStore.Models
             new List<Order>
             {
                 new Order()
-                { Customer = "Alice Smith", TotalCost = 68.45m,
+                { Customer = "Alice Smith", TotalCost = 80373.45m,
                   Lines = new List<OrderLine>
                   {
                       new OrderLine() {ProductId = 5, Count = 1 },
