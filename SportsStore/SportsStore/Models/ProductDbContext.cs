@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity;
 
 namespace SportsStore.Models
 {
     public class ProductDbContext : DbContext
     {
-        public ProductDbContext() : base("SportsStoreDb") {
+        public ProductDbContext() : base("SportsStoreDb")
+        {
             Database.SetInitializer<ProductDbContext>(new ProductDbInitializer());
         }
 
