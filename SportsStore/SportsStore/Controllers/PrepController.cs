@@ -36,7 +36,7 @@ namespace SportsStore.Controllers
         [Authorize(Roles = "Administrators")]
         public async Task<ActionResult> SaveProduct(Product product)
         {
-            await repo.SaveProductsAsync(product);
+            await repo.SaveProductAsync(product);
             return RedirectToAction("Index");
         }
 
@@ -53,7 +53,7 @@ namespace SportsStore.Controllers
 
         public async Task<ActionResult> SaveOrder(Order order)
         {
-            await repo.SaveOrdersAsync(order);
+            await repo.SaveOrderAsync(order);
             return RedirectToAction("Orders");
         }
 

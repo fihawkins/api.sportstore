@@ -15,7 +15,7 @@ namespace SportsStore.Models
             get { return context.Products; }
         }
 
-        public async Task<int> SaveProductsAsync(Product product)
+        public async Task<int> SaveProductAsync(Product product)
         {
             if (product.Id == 0)
             { 
@@ -51,7 +51,7 @@ namespace SportsStore.Models
             get { return context.Orders.Include("Lines").Include("Lines.Product"); }
         }
 
-        public async Task<int> SaveOrdersAsync(Order order)
+        public async Task<int> SaveOrderAsync(Order order)
         {
             if(order.Id == 0)
             {
