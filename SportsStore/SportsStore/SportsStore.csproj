@@ -184,6 +184,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="scripts\storeCommonController.js" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -198,12 +199,16 @@
     <Content Include="scripts\jquery-2.1.0.min.js" />
     <Content Include="scripts\knockout-3.1.0.debug.js" />
     <Content Include="scripts\knockout-3.1.0.js" />
+    <None Include="scripts\_references.js" />
+    <Content Include="scripts\storeAjax.js" />
+    <Content Include="scripts\storeModel.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\PrepController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
@@ -237,6 +242,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Prep\Index.cshtml" />
     <Content Include="Views\Prep\Orders.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
