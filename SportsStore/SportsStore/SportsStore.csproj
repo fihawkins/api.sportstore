@@ -202,6 +202,8 @@
     <None Include="scripts\_references.js" />
     <Content Include="scripts\storeAjax.js" />
     <Content Include="scripts\storeModel.js" />
+    <Content Include="scripts\storeOrdersController.js" />
+    <Content Include="scripts\storeProductsController.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

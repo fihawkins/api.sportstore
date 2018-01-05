@@ -1,11 +1,39 @@
 ﻿<script>
- var testAuth = function () {
- model.username('Admin');
- model.password('secret');
- //a requisição é bem sucedida mas chama a função de callback de erro
- authenticate();
- }
+    var testAuth = function () {
+        model.username('Admin');
+        model.password('secret');
+        //a requisição é bem sucedida mas chama a função de callback de erro
+        authenticate();
+    }
+
+    var testDeleteProduct = function () {
+        deleteProduct(2);
+    }
+
+    var testChangeProduct = function () {
+        var product = model.products()[2];
+        product.Price = product.Price + 10;
+        saveProduct(product);
+    }
+
+    var testDeleteOrder = function () {
+        deleteOrder(1);
+    }
+
+    var testSaveOrder = function () {
+        //var order = model.orders()[0];
+        var order = {
+            Customer: "Filipe Lopes",
+            TotalCost: 0,
+            Lines: [{ ProductId: 9, Count: 1 }, { ProductId: 8, Count: 1 }]
+        };
+        order.TotalPrice = order.TotalPrice + 10;
+        saveOrder(order);
+    }
+
 </script>
+
+<div class="alert alert-danger" data-bind="visible: model.gotError(), text: model.error()"></div>
 
 <div class="panel panel-primary">
     <div class="panel-heading">Authentication</div>
@@ -13,5 +41,27 @@
         <tr><td>Authenticated:</td><td data-bind="text: model.authenticated()"></td></tr>
         <tr><td>User:</td><td data-bind="text: model.username()"></td></tr>
         <tr><td colspan="2"><button data-bind="click: testAuth">Authenticate</button></td></tr>
+    </table>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Product Controller Functions</div>
+    <table class="table table-striped">
+        <tr>
+            <td><button data-bind="click: getProducts">Get Products</button></td>
+            <td><button data-bind="click: testDeleteProduct">Delete Product</button></td>
+            <td><button data-bind="click: testChangeProduct">Change Product</button></td>
+        </tr>
+    </table>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Order Controller Functions</div>
+    <table class="table table-striped">
+        <tr>
+            <td><button data-bind="click: getOrders">Get Orders</button></td>
+            <td><button data-bind="click: testDeleteOrder">Delete Order</button></td>
+            <td><button data-bind="click: testSaveOrder">Save Order</button></td>
+        </tr>
     </table>
 </div>

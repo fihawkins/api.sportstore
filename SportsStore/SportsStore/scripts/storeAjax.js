@@ -18,7 +18,7 @@
 var setDefaultCallbacks = function (successCallback, errorCallback) {
     $.ajaxSetup({
         complete: function (jqXHR, status) {
-            if (jqXHR.status >= 200 && jqXHR < 300) {
+            if (jqXHR.status >= 200 && jqXHR.status < 300) {
                 successCallback(jqXHR.responseJSON);
             } else {
                 errorCallback(jqXHR.status, jqXHR.statusText);
