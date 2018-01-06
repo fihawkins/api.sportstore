@@ -201,6 +201,8 @@
     <Content Include="scripts\knockout-3.1.0.js" />
     <None Include="scripts\_references.js" />
     <Content Include="scripts\storeAjax.js" />
+    <Content Include="scripts\storeCustomerController.js" />
+    <Content Include="scripts\storeCustomerModel.js" />
     <Content Include="scripts\storeModel.js" />
     <Content Include="scripts\storeOrdersController.js" />
     <Content Include="scripts\storeProductsController.js" />
@@ -245,6 +247,11 @@
     <Content Include="Views\Prep\Index.cshtml" />
     <Content Include="Views\Prep\Orders.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\ProductList.cshtml" />
+    <Content Include="Views\Home\ProductCart.cshtml" />
+    <Content Include="Views\Home\Checkout.cshtml" />
+    <Content Include="Views\Home\CartWidget.cshtml" />
+    <Content Include="Views\Home\ThankYou.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
