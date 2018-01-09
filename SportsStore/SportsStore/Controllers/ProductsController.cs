@@ -18,6 +18,7 @@ namespace SportsStore.Controllers
 
         public IEnumerable<Product> GetProducts()
         {
+            var a = Repository.Products;
             return Repository.Products;
         }
 
